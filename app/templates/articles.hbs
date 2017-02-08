@@ -1,0 +1,8 @@
+<h2>List of Scientists</h2>
+
+<ul>
+  {{#each model.documents as |document|}}
+    <li></li>
+    {{get-structured-text document "article.title" model.linkResolver }}
+  {{/each}}
+</ul>
